@@ -229,6 +229,11 @@ HDFS_CFG = {
                 "target": "MGR01"
             },
             {
+                "name": "hdfs-snn",
+                "type": "SECONDARYNAMENODE",
+                "target": "MGR01"
+            },
+            {
                 "name": "hdfs-dn",
                 "type": "DATANODE",
                 "target": "DATANODE"
@@ -256,6 +261,10 @@ HDFS_CFG = {
                            'dfs_qjournal_write_txns_timeout_ms': 120000,
                            'log_directory_free_space_absolute_thresholds': '{\"warning\":4294967296,\"critical\":3221225472}',
                            'namenode_data_directories_free_space_absolute_thresholds': '{\"warning\":4294967296,\"critical\":3221225472}'}
+            },
+            {
+                "type": "SECONDARYNAMENODE",
+                "config": {'fs_checkpoint_dir_list': '/data0/snn', 'secondarynamenode_log_dir': '/var/log/panda/hadoop/snn'}
             },
             {
                 "type": "DATANODE",
