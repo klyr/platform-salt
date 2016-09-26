@@ -400,6 +400,7 @@ HIVE_CFG = {
             {
                 "type": "HIVEMETASTORE",
                 "config": {'hive_log_dir': '/var/log/pnda/hive',
+                           'hive_metastore_java_heapsize': '1073741824',
                            'log_directory_free_space_absolute_thresholds': '{\"warning\":4294967296,\"critical\":3221225472}',
                            'max_log_backup_index': '2',
                            'max_log_size': '100'}
