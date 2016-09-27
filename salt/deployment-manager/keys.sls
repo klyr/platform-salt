@@ -11,7 +11,7 @@
 cdh-install_pub_key:
   module.run:
     - name: cp.get_file
-    - path: 'salt://{{ dm_id }}/{{ deployment_manager_directory_name }}/dm.pem.pub'
+    - path: 'salt://{{ dm_id }}{{ install_dir }}/{{ deployment_manager_directory_name }}/dm.pem.pub'
     - dest: /tmp/pubkey
 
 cdh-install_key:
