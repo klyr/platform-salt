@@ -49,7 +49,7 @@ deployment-manager-gen_key:
 deployment-manager-push_key:
   module.run:
     - name: cp.push
-    - path: '{{ deployment_manager_directory_name }}/dm.pem.pub'
+    - path: '/{{ deployment_manager_directory_name }}/dm.pem.pub'
 
 deployment-manager-copy_upstart:
   file.managed:
