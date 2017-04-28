@@ -25,6 +25,9 @@
 broker.id={{ salt['grains.get']('broker_id') }}
 
 
+VLAN={{ pillar['specific_config']['kafka_vlan'] }}
+
+
 ############################# Topics Settings #############################
 auto.create.topics.enable=false
 delete.topic.enable=true
